@@ -26,6 +26,7 @@ export default class Home extends Component {
   };
   logout = () => {
     console.log("logout");
+    this.props.setCounter(0);
   };
 
   render() {

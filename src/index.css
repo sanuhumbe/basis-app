@@ -22,9 +22,12 @@ code {
   background: #fff;
 }
 
-
 .ant-popover-placement-bottom,
 .ant-popover-placement-bottomLeft,
 .ant-popover-placement-bottomRight {
   margin: 11px 0px 0px 25px !important;
+}
+
+.ant-modal-mask {
+  background-color: #fff !important;
 }
