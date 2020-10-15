@@ -31,3 +31,8 @@ code {
 .ant-modal-mask {
   background-color: #fff !important;
 }
+
+.responsive {
+  width: 100%;
+  height: auto;
+}

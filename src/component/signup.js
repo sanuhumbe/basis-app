@@ -75,7 +75,13 @@ const CollectionCreateForm = ({
       title={null}
       closable={false}
     >
-      <img height={200} width={450} alt="image" src={image} />
+      <img
+        className="responsive"
+        height={200}
+        width={450}
+        alt="image"
+        src={image}
+      />
       <Divider />
 
       {counter === 0 && GetPhoneNumForm}
@@ -164,6 +170,13 @@ const ModelView = (props) => {
     if (counter === 0) {
       console.log("Received values of form: ", counter, values);
       varifyPhoneAPI(values);
+    } else {
+      if (counter > 7) {
+        props.setCounter(8);
+      } else {
+        var increseCount = counter + 1;
+        setCounter(increseCount);
+      }
     }
   };
 

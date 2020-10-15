@@ -20,7 +20,7 @@ export default class App extends React.Component {
         {!this.state.login && this.state.counter < 8 ? (
           <SignUp setCounter={this.setCounter} />
         ) : (
-          <Home setCounter={this.setCounter}/>
+          <Home setCounter={this.setCounter} />
         )}
       </div>
     );
